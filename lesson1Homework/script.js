@@ -4,7 +4,6 @@ let year = prompt("What year were you born? ");
 
 let live_place = prompt("Where do you live? ");
 
-let result = `Your full name is ${first_name} ${last_name}, you were born in ${year} and you live in ${live_place}`
+let result = `Your full name is ${first_name} ${last_name}, you were born in ${year} and you live in ${live_place}`;
 
-alert(result)            
-
+alert(result);
