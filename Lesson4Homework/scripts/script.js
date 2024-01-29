@@ -1,3 +1,134 @@
+// ქვემოთ მოცემულ კოდში დაშვებულია ლოგიკური შეცდომა, იპოვეთ და გაასწორეთ იგი.
+
+let action = "move";
+
+switch (action){
+    case "move":
+        alert("You are moving!");
+        break;
+    case "jump":
+        alert("You are jumping!");
+        break;
+    case "run":
+        alert("You are running!");
+        break;
+    default:
+        alert("Invalid action.");
+
+}
+
+
+// switch-ის გამოყენებით შეავსეთ გამოტოვებული ადგილები ისე, რომ თუ ბოსტნეული (vegetables) სტაფილოზე (carrot) დგას გამოიტანოს “Hello” და თუ “Broccoli” ზე დგას გამოიტანოს “Welcome”.
+
+let vegetables;
+
+switch (vegetables){
+    case "Carrot":
+        alert("Hello");
+        break;
+    case "Broccoli":
+        alert("Welcome");
+        break;    
+}
+
+// თუ ბოსტნეული(vegetables) არც ბროკოლია(broccoli) და არც სტაფილო (carrot) მაშინ გამოიტანეთ არცერთი (“Neither”)
+
+switch (vegetables){
+    case "Carrot":
+        alert("Hello");
+        break;
+    case "Broccoli":
+        alert("Welcome");
+        break;
+    default:
+        alert("Neither");    
+}
+
+
+// შექმენით ხმის მიცემის უფლების შემმოწმებელი ფუნქცია. თუ მომხმარებლის ასაკი ნაკლებია 18-ზე უნდა გამოჩნდეს, რომ მას არ შეუძლია ხმის მიცემა, თუ მისი ასაკი მეტია 18-ზე უნდა გამოჩნდეს, რომ მომხმარებელს შეუძლია ხმის მიცემა.
+
+function vote(age){
+    if(age < 18){
+        return "You can't vote";
+    }else{
+        return "You can vote"
+    };
+};
+
+// console.log(vote(18));
+
+
+// შექმენით პაროლის სიძლიერის შემმოწმებელი ფუნქცია, ფუნქციამ უნდა მიიღოს პარამეტრის სახით შესამოწმებელი პაროლი, პირობა ასეთია:
+// 1. თუ პაროლი შედგება 3-ზე ნაკლები სიმბოლოსგან იგი უარგისია.
+// 2. თუ პაროლი შედგება მინ. 3 მაქ. 6 სიმბოლოსგან იგი სუსტია
+// 3. თუ პაროლი შედგება მინ. 6 მაქ. 8 სიმბოლოსგან იგი მისაღებია
+// 4. თუ პაროლი შედგება მინ. 8 მაქ. 16 სიმბოლოსგან იგი ძლიერია.
+// 5. თუ პაროლი მხოლოდ რიცხვებისგან შედგება იგი უვარგისია.
+
+function password_control(password){
+    if(password.length < 3){
+        return "უვარგისი";
+    }
+    else if(password.length >= 3 && password.length <= 6){
+        return "სუსტი";
+    }
+    else if(password.length > 6 && password.length <= 8){
+        return "მისაღები";
+    }
+    else if(password.length > 8 && password.length <= 16){
+        return "ძლიერი";
+    }
+    else if(typeof password === typeof 1){
+        return "უვარგისი";
+    }
+};
+
+// console.log(password_control("Hello"));
+
+// შექმენით Quiz-ის პროგრამა შემდეგი პირობების გათვალისწინებით:
+// საჭიროა გქონდეთ მინიმუმ 5 სხვადასხვა შეკითხვა. ჩაშენებული პირობითი ოპერატორების მეშვეობით გააკეთეთ ისე, რომ მომხმარებელს შეეძლოს თითოეული ამ შეკითხვიდან მომდევნო შეკითხვაზე გადასვლა, მხოლოდ იმ შემთხვევაში თუ წინა შეკითხვას სწორად უპასუხებს.
+// მაგ. თუ მომხმარებელი გასცემს სწორად პასუხს პირველ შეკითხვას, მხოლოდ ამ შემთხვევაში უნდა მოხდეს მისი მეორე შეკითხვაზე გადაყვანა იგივე დანარჩენ შეკითხვებზეც.
+
+function quizz(){
+    count = 0;
+    let question1 = prompt("1.What is the capital of France?");
+    if(question1 === "paris"){
+        let question2 = prompt("2.How many continents are there on Earth?");
+        count++;
+
+        if(question2 === "7"){
+            let question3 = prompt("3.What is the largest planet in our solar system?");
+            count++;
+
+            if(question3 === "jupiter"){
+                let question4 = prompt("4.Which animal is know as the 'King of the Jungle'?");
+                count++;
+
+                if(question4 === "lion"){
+                    let question5 = prompt("5.What is the chemichal symbol for water?");
+                    count++;
+
+                    if(question5 === "h2o"){
+                        alert("You've answered right to the all questions");
+                    }else{
+                        alert(`${count} right answers`);    
+                    }
+                }else{
+                    alert(`${count} right answers`);
+                }
+            }else{
+                alert(`${count} right answers`);
+            }
+        }else{
+            alert(`${count} right answers`);
+        }
+    }else{
+        alert(`${count} right answers`);
+    };
+}
+quizz();
+
+
 // შექმენით პროგრამა, რომელიც ნებისმიერი 10 ელემენტისგან შემდგარი მასივიდან გამოიტანს ყოველ მესამე ელემენტს ეკრანზე. შეასრულეთ ეს დავალება ციკლების მეშვეობით.
 
 // for loop
@@ -292,7 +423,7 @@ function emailProtect(email){
     return protectedEmail;
 };
 
-console.log(emailProtect("nika.bostoganashvili@gmail.com"));
+// console.log(emailProtect("nika.bostoganashvili@gmail.com"));
 
 
 
