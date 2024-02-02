@@ -1,5 +1,6 @@
 // ქვემოთ მოცემულ კოდში დაშვებულია ლოგიკური შეცდომა, იპოვეთ და გაასწორეთ იგი.
 
+<<<<<<< Updated upstream
 let action = "move";
 
 switch (action){
@@ -43,6 +44,51 @@ switch (vegetables){
     default:
         alert("Neither");    
 }
+=======
+// let action = "move";
+
+// switch (action){
+//     case "move":
+//         alert("You are moving!");
+//         break;
+//     case "jump":
+//         alert("You are jumping!");
+//         break;
+//     case "run":
+//         alert("You are running!");
+//         break;
+//     default:
+//         alert("Invalid action.");
+
+// }
+
+
+// // switch-ის გამოყენებით შეავსეთ გამოტოვებული ადგილები ისე, რომ თუ ბოსტნეული (vegetables) სტაფილოზე (carrot) დგას გამოიტანოს “Hello” და თუ “Broccoli” ზე დგას გამოიტანოს “Welcome”.
+
+// let vegetables;
+
+// switch (vegetables){
+//     case "Carrot":
+//         alert("Hello");
+//         break;
+//     case "Broccoli":
+//         alert("Welcome");
+//         break;    
+// }
+
+// // თუ ბოსტნეული(vegetables) არც ბროკოლია(broccoli) და არც სტაფილო (carrot) მაშინ გამოიტანეთ არცერთი (“Neither”)
+
+// switch (vegetables){
+//     case "Carrot":
+//         alert("Hello");
+//         break;
+//     case "Broccoli":
+//         alert("Welcome");
+//         break;
+//     default:
+//         alert("Neither");    
+// }
+>>>>>>> Stashed changes
 
 
 // შექმენით ხმის მიცემის უფლების შემმოწმებელი ფუნქცია. თუ მომხმარებლის ასაკი ნაკლებია 18-ზე უნდა გამოჩნდეს, რომ მას არ შეუძლია ხმის მიცემა, თუ მისი ასაკი მეტია 18-ზე უნდა გამოჩნდეს, რომ მომხმარებელს შეუძლია ხმის მიცემა.
@@ -89,6 +135,7 @@ function password_control(password){
 // საჭიროა გქონდეთ მინიმუმ 5 სხვადასხვა შეკითხვა. ჩაშენებული პირობითი ოპერატორების მეშვეობით გააკეთეთ ისე, რომ მომხმარებელს შეეძლოს თითოეული ამ შეკითხვიდან მომდევნო შეკითხვაზე გადასვლა, მხოლოდ იმ შემთხვევაში თუ წინა შეკითხვას სწორად უპასუხებს.
 // მაგ. თუ მომხმარებელი გასცემს სწორად პასუხს პირველ შეკითხვას, მხოლოდ ამ შემთხვევაში უნდა მოხდეს მისი მეორე შეკითხვაზე გადაყვანა იგივე დანარჩენ შეკითხვებზეც.
 
+<<<<<<< Updated upstream
 function quizz(){
     count = 0;
     let question1 = prompt("1.What is the capital of France?");
@@ -127,6 +174,46 @@ function quizz(){
     };
 }
 quizz();
+=======
+// function quizz(){
+//     count = 0;
+//     let question1 = prompt("1.What is the capital of France?");
+//     if(question1 === "paris"){
+//         let question2 = prompt("2.How many continents are there on Earth?");
+//         count++;
+
+//         if(question2 === "7"){
+//             let question3 = prompt("3.What is the largest planet in our solar system?");
+//             count++;
+
+//             if(question3 === "jupiter"){
+//                 let question4 = prompt("4.Which animal is know as the 'King of the Jungle'?");
+//                 count++;
+
+//                 if(question4 === "lion"){
+//                     let question5 = prompt("5.What is the chemichal symbol for water?");
+//                     count++;
+
+//                     if(question5 === "h2o"){
+//                         alert("You've answered right to the all questions");
+//                     }else{
+//                         alert(`${count} right answers`);    
+//                     }
+//                 }else{
+//                     alert(`${count} right answers`);
+//                 }
+//             }else{
+//                 alert(`${count} right answers`);
+//             }
+//         }else{
+//             alert(`${count} right answers`);
+//         }
+//     }else{
+//         alert(`${count} right answers`);
+//     };
+// }
+// quizz();
+>>>>>>> Stashed changes
 
 
 // შექმენით პროგრამა, რომელიც ნებისმიერი 10 ელემენტისგან შემდგარი მასივიდან გამოიტანს ყოველ მესამე ელემენტს ეკრანზე. შეასრულეთ ეს დავალება ციკლების მეშვეობით.
@@ -418,12 +505,19 @@ function emailProtect(email){
     let [firstName, lastName] = username.split(".");
 
     let protectedEmail = `${firstName}${".".repeat(lastName.length)}@${mail}`;
+<<<<<<< Updated upstream
     console.log([username, mail]);
+=======
+>>>>>>> Stashed changes
 
     return protectedEmail;
 };
 
+<<<<<<< Updated upstream
 // console.log(emailProtect("nika.bostoganashvili@gmail.com"));
+=======
+console.log(emailProtect("nika.bostoganashvili@outlook.com"));
+>>>>>>> Stashed changes
 
 
 
