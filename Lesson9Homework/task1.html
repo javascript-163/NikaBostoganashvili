@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <textarea id="textInput"></textarea>
+    <input type="file" id="chooseFile" />
+
+    <button onclick="readFile()">Read File</button>
+    <p id="totalSymbols"></p>
+    <p id="totalWords"></p>
+    <p id="longestWord"></p>
+    <p id="shortestWord"></p>
+
+    <script src="scripts/task1.js"></script>
+</body>
+
+</html>
