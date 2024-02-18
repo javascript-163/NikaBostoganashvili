@@ -281,7 +281,7 @@ function factorialCalculator2(number) {
 // შექმენით ფუნქცია, რომელიც სტრიქონის პირველ ასობგერის კაპიტალიზირებას მოახდენს მაგ. javascript => უნდა გახდეს: Javascript, ანუ J დიდი ასობგერით უნდა ეწეროს.
 
 function first_capitalization(keyword) {
-  if (typeof keyword !== typeof String) {
+  if (typeof keyword !== "string") {
     return "Invalid type";
   } else {
     return keyword.replace(keyword[0], keyword[0].toUpperCase());
@@ -293,7 +293,7 @@ function first_capitalization(keyword) {
 // შექმენით ფუნქცია, რომელიც შეამოწმებს არის თუ არა მასზე მიწოდებული სტრიქონი ცარიელი. მაგ. blankStringChecker(testString) => რომელიც დააბრუნებს this string is blank-ს თუ ცარიელია/ this string is not blank-ს თუ ცარიელი არაა.
 
 function blankStringChecker(testString) {
-  if (typeof testString !== typeof String) {
+  if (typeof testString !== "string") {
     return "Invalid type";
   } else if (testString === "") {
     return "This string is blank";
@@ -307,7 +307,7 @@ function blankStringChecker(testString) {
 // შექმენით ფუნქცია, რომელიც მასზე მიწოდებულ სტრიქონს გადააქცევს მასივად. მაგ. stringToArray(testString) => თუ მივაწვდით სტრიქონს “Hello, World” => გამოიტანს მის ვერსიას მასივში. [“Hello”, “World”]
 
 function stringToArray(testString) {
-  if (typeof testString !== typeof String) {
+  if (typeof testString !== "string") {
     return "Ivalid type";
   } else {
     return testString.split(" ");
