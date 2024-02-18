@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        textarea {
+            width: 50%;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        div {
+            margin-bottom: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- text  -->
+    <div>
+        <textarea id="textInput"></textarea>
+        <input type="file" id="chooseFile" />
+
+        <button onclick="readFile()">Read File</button>
+
+    </div>
+
+    <!-- image  -->
+    <div>
+        <img src="" alt="" id="picture">
+        <input type="file" id="choosePicture">
+        <button onclick="showPicture()">Show Picture</button>
+    </div>
+
+    <div>
+        <video src="" id="video" onclick="play()"></video>
+        <input type="file" id="chooseVideo">
+        <button onclick="showVideo()">Show Video</button>
+    </div>
+
+    <script src="scripts/task3.js"></script>
+</body>
+
+</html>
