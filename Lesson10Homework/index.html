@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- longitude and latitude  -->
+    <h1>Weather by Longitude and Latitude</h1>
+    <input id="longitute" placeholder="Enter longitute">
+    <input id="latitute" placeholder="Enter latitute">
+    <button type="submit" id="submitData" onclick="weatherInfo()">Send</button>
+    <div id="result"></div>
+
+    <!-- town  -->
+    <br>
+    <br>
+    <h1>Weather by town</h1>
+    <input type="text" id="town" placeholder="Enter town">
+    <button type="submit" id="submitTown" onclick="weatherByTown()">Submit</button>
+    <div id="result2"></div>
+    <br>
+    <br>
+
+    <h3 id="windSpeed"></h3>
+    <img src="" alt="" id="windPhoto">
+
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
