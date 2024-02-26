@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="filter_div">
+        <h1>Product Filter</h1>
+        <input type="text" placeholder="Search Product" title="Search by name" id="filter_input"
+            onkeyup="searchProduct()">
+        <br>
+        <br>
+        <div class="buttons">
+            <button class="filter_button active" onclick="showAll()">All</button>
+            <button class="filter_button" onclick="searchProduct('watch')">Watch</button>
+            <button class="filter_button" onclick="searchProduct('shirt')">Shirt</button>
+            <button class="filter_button" onclick="searchProduct('gown')">Gown</button>
+            <button class="filter_button" onclick="searchProduct('jewelry')">Jewelry</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="column">
+        <div class="card cardAutoSlider">
+            <img src="images/Apple-watch-ultra.jpg" alt="Apple-Watch-Ultra">
+            <h4>Apple Watch Ultra</h4>
+            <p>$800</p>
+            <button class="cartButton">Add to Cart</button>
+        </div>
+        <div class="card cardAutoSlider">
+            <img src="images/Apple-watch-series9.jpg" alt="Apple-watch-series9">
+            <h4>Apple Watch Series 9</h4>
+            <p>$500</p>
+            <button class="cartButton">Add to Cart</button>
+        </div>
+        <div class="card cardAutoSlider">
+            <img src="images/white-shirt.jpg" alt="white-shirt">
+            <h4>White Shirt</h4>
+            <p>$100</p>
+            <button class="cartButton">Add to Cart</button>
+        </div>
+        <div class="card cardAutoSlider">
+            <img src="images/blue-tshirt.jpg" alt="blue-tshirt">
+            <h4>Blue T-shirt</h4>
+            <p>$20</p>
+            <button class="cartButton">Add to Cart</button>
+        </div>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <span class="dot activeDot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <br>
+    <div id="column">
+        <div class="card cardSlider">
+            <img src="images/black-gown.jpg" alt="black-gown">
+            <h4>Black Gown</h4>
+            <p>$250</p>
+            <button class="cartButton">Add to Cart</button>
+        </div>
+        <div class="card cardSlider">
+            <img src="images/white-gown.jpg" alt="white-gown">
+            <h4>White Gown</h4>
+            <p>$200</p>
+            <button class="cartButton">Add to Cart</button>
+        </div>
+        <div class="card cardSlider">
+            <img src="images/silver-jewelry.jpg" alt="silver-jewelry">
+            <h4>Silver Jewelry</h4>
+            <p>$240</p>
+            <button class="cartButton">Add to Cart</button>
+        </div>
+        <div class="card cardSlider">
+            <img src="images/jewelry.jpg" alt="jewelry">
+            <h4>Gold Jewelry</h4>
+            <p>$300</p>
+            <button class="cartButton">Add to Cart</button>
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        <span class="dot2 activeDot2" onclick="currentSlide(1)"></span>
+        <span class="dot2" onclick="currentSlide(2)"></span>
+        <span class="dot2" onclick="currentSlide(3)"></span>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
