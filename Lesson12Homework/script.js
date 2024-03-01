@@ -56,9 +56,10 @@ function authorization() {
       window.location.href = "index.html";
     } else {
       alert("Authentication failed. Invalid username or password.");
+      
     }
   } else {
-   alert("No user data found. Please register.");
+    alert("No user data found. Please register.");
   }
 }
 
