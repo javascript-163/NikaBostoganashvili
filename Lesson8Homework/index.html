@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image {
+            width: 500px;
+            height: 500px;
+            display: block;
+        }
+
+        .colors {
+            margin-top: 200px;
+            display: flex;
+            column-gap: 90px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .buttons {
+            display: flex;
+            column-gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- task 1  -->
+    <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="image" class="image">
+    <br>
+    <button class="increase">ფოტოს ზომის გაზრდა</button>
+    <button class="decrease">ფოტოს ზომის შემცირება</button>
+
+
+    <!-- task 2  -->
+    <div class="colors">
+        <p class="red">Red</p>
+        <p class="blue">Blue</p>
+        <p class="green">Green</p>
+    </div>
+
+    <div class="buttons">
+        <button id="toRed" onclick="toRed()">Change Color</button>
+        <button id="toBlue" onclick="toBlue()">Change Color</button>
+        <button id="toGreen" onclick="toGreen()">Change Color</button>
+    </div>
+
+    <!-- task 3  -->
+
+    <div class="texts">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nostrum dignissimos alias natus, fugiat porro
+            ad dolorum est, deserunt repudiandae adipisci sequi quod? Sequi aliquam omnis repellendus cupiditate enim
+            eveniet.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos laudantium illum ex, minima, odit esse atque
+            laborum fuga ducimus provident soluta repudiandae sunt quam corrupti quo ab nesciunt, doloribus accusamus.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sapiente reprehenderit placeat quidem
+            voluptatum. Neque esse, quia praesentium inventore suscipit vel provident ipsa delectus dolore cupiditate
+            minima tempore iure itaque?</p>
+    </div>
+    <div class="buttons">
+        <button class="show" onclick="show()">ჩვენება</button>
+        <button class="hide" onclick="hide()">დამალვა</button>
+    </div>
+
+
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
